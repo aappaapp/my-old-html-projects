@@ -1,0 +1,16 @@
+:root{
+	--default-color: black;
+}
+input[type="text"], textarea{
+	border: 1px solid var(--default-color);
+	border-radius: 5px;
+	resize: none;
+	text-align: center;
+}
+textarea{
+	height: 10em;
+	width: 15em;
+}
+a.btn{
+	border: 2px solid var(--default-color);
+}

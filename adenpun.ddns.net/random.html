@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script>
+			function random(){
+				var array = new Array("1.be", "2.bear", "3.beat", "4.become", "5.break", "6.choose", "7.come", "8.do(does)", "9.draw", "10.drink", "11.eat", "12.fall", "13.fly(flies)", "14.forget");
+				var random = array[Math.floor((Math.random() * 14) + 1)]
+				document.getElementById("random-display").innerHTML = random;
+			}
+		</script>
+		<style>
+			head, script, style{
+				display: block;
+			}
+			body{
+				font-family: Arial;
+			}
+			#random-display{
+				font-size: 500%;
+			}
+			#random-button{
+				font-size: 500%;
+				height: 10%;
+				width: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="random-display">Click the button!</div>
+		<input type="button" value="Random!" id="random-button" onclick="random()">
+	</body>
+</html>

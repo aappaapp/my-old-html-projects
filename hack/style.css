@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    user-select: none;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin: 0px 20px;
+    color: #84c754;
+    display: inline-block;
+    height: 3vh;
+}
+textarea{
+    resize: none;
+    width: 90vw;
+    overflow: hidden;
+    height: 35vw;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    background-color: #00000000;
+    color: #84c754;
+    margin: 0px 20px;
+}
+p{
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 5px;
+    margin: 0px 20px;
+    width: 90vw;
+    height: 3vh;
+}

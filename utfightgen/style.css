@@ -1,0 +1,23 @@
+@font-face{
+    font-family: 'unifont';
+    src: url(./unifont-13.0.04.ttf);
+}
+::selection{
+    color: yellow;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #4CAF50;
+}
+html{
+    cursor: url(./cursor.png), auto;
+    font-family: 'unifont', Arial, Helvetica, sans-serif;
+    background-color: white;
+    background-image: url(./background.png);
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+}

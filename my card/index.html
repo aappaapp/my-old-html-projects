@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+		<script>
+			function screenshot(){
+				html2canvas(document.getElementById('card')).then(function(canvas) => {
+					console.log(canvas.toDataURL('image/jpeg', 0.9));
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div id="card">HELLO</div>
+		<input type="button" onclick="screenshot()" value="sdas">
+	</body>
+</html>

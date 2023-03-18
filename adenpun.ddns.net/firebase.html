@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+        
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+        
+        
+        <script>
+            // Your web app's Firebase configuration
+            var config = {
+                apiKey: "AIzaSyBQlKYBx6ejX2CPV_8xabMDGm5ewt8RWp0",
+                authDomain: "web-db-aden.firebaseapp.com",
+                databaseURL: "https://web-db-aden.firebaseio.com",
+                projectId: "web-db-aden",
+                storageBucket: "web-db-aden.appspot.com",
+                messagingSenderId: "748646657120",
+                appId: "1:748646657120:web:f8c33eda5ac317fe6c6705"  
+            };
+            // Initialize Firebase
+            firebase.initializeApp(config);
+            
+            
+            var db = firebase.firestore();
+
+            function storedata() {
+                db.collection("movies").doc("新世紀福爾摩斯").set({
+                name: "新世紀福爾摩斯",
+                date: "2010",
+                desctiption: "本劇改編自阿瑟·柯南·道爾爵士家喻戶曉的推理小說，一位脾氣古怪的大偵探在現代倫敦的街頭悄悄巡行，四處搜尋線索。",
+                actors: ["班尼迪克·康柏拜區", "馬丁·費曼"]
+                });
+            }
+    </script>
+    </head>
+    <body>
+        <button onclick="storedata()"> store</button>
+    </body>
+</html>

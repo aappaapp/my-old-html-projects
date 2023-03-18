@@ -1,0 +1,114 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+body{
+	margin: 0;
+}
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: white; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: grey; 
+}
+.center{
+    text-align: center;
+}
+h1, h2, h3, h4, h6{
+    font-weight: 100;
+    margin: 0;
+}
+.author{
+    font-weight: 100;
+    margin: 0;
+}
+.bodycontent{
+	position: absolute;
+	width: 100vw;
+	top: 50px;
+}
+.card-container{
+    background-color: bisque;
+    padding: 15px;
+    text-align: center;
+}
+.card{
+    padding: 10px;
+    background-color: white;
+    display: inline-block;
+    height: 250px;
+    width:  170px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 500ms;
+	position: relative;
+	text-decoration: none;
+	color: black;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-item.photo{
+    background-color: grey;
+    width: 150px;
+    height: 100px;
+    margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+.card-item.photo::after{
+	content: "no photo now";
+}
+.card-item.title{
+    font-size: 1.5em;
+}
+.card-item.info{
+    font-size: 1em;
+}
+.card .bottom{
+	left: 0px;
+	margin-bottom: 20px;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+	width: 100%;
+}
+section{
+	height: 100vh;
+	padding: 20px 10px;
+}
+.navbar{
+	position: fixed;
+	transition: all 1s;
+	height: 40px;
+	background-color: white;
+	width: 100vw;
+	padding: 0px 10px;
+}
+a{
+	color: blue;
+}
+#aboutme{
+	background-color: #FFCAB8;
+	color: white;
+}
+#aboutme a{
+	color: white;
+}

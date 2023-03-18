@@ -1,0 +1,5 @@
+notice('1. Alert Message');
+log('2. Log Message');
+/\ 3. '/\' = comment
+aps('body').append('4. Append Text');
+wait();

@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>English Fun!</title>
+
+    <script src='jquery-latest.min.js'></script>
+    <script src='onsenui.min.js'></script>
+    <script src='script.js'></script>
+
+    <link rel='stylesheet' href='onsenui.css'>
+    <link rel='stylesheet' href='onsen-css-components.min.css'>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <ons-navigator swipeable class='myNavigator' page='main.html'></ons-navigator>
+    <ons-page>
+        <ons-toolbar>
+            <div class='center'>Login</div>
+        </ons-toolbar>
+
+        <ons-tabbar swipeable position='auto'>
+            <ons-tab page='main.html' label='Login' active>
+            </ons-tab>
+            <ons-tab page='about.html' label='About'>
+            </ons-tab>
+        </ons-tabbar>
+    </ons-page>
+    <template id='main.html'>
+        <ons-page class='login'>
+            <!--<ons-toolbar>
+                <div class='center'>English Fun! - Sign In</div>
+            </ons-toolbar>-->
+            <div style='text-align: center; margin-top: 200px'>
+                <p>
+                    <ons-input id='email' placeholder='Email' type='email   ' modifier='underbar'></ons-input>
+                </p>
+                <p>
+                    <ons-input id='pwd' placeholder='Password' type='password' modifier='underbar'>
+                    </ons-input>
+                </p>
+                <p>
+                    Doesn't have account? <a href>Sign Up</a>!
+                </p>
+                <p>
+                    <ons-button>Sign in</ons-button>
+                </p>
+            </div>
+        </ons-page>
+    </template>
+</body>
+
+</html>

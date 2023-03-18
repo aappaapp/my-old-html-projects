@@ -1,0 +1,11 @@
+textarea{
+	height: 70%;
+	resize: none;
+	width: 99%;
+}
+a.btn{
+	border: 2px solid black;
+}
+#txt, #zip{
+	display: none;
+}

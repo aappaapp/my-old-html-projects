@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>AdenSite</title>
+        
+        <meta charset="UTF-8">
+        
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+        <!-- W3.css -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        
+        <!-- My Script And Css -->
+        <script src="/js.js"></script>
+        <script src="/login.js"></script>
+        <link rel="stylesheet" href="/css.css">
+    </head>
+    <body onload="bar()">
+        <df-messenger intent="WELCOME" chat-title="Test" agent-id="cff60ef7-c112-477f-9141-5d26ad020609" language-code="en"></df-messenger>
+        <div id="bar">
+            
+        </div>
+        <!-- <div class="w3-bar w3-indigo">
+            <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-blue">主頁</a>
+            <a href="javascript:reload();" class="w3-bar-item w3-button w3-mobile w3-hover-blue" alt="if you die">Reload</a>
+            <a href="/black.html" class="w3-bar-item w3-button w3-mobile w3-hover-blue">1. 黑暗神器</a>
+            <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hover-blue">
+                Download
+              </button>
+              <div id="demodr" class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a class="w3-bar-item w3-button w3-hover-blue" href="/black.html" download>1. 黑暗神器</a>
+              </div>
+            </div>
+            <a href="javascript:loginPage()" class="w3-bar-item w3-button w3-mobile w3-hover-blue w3-right">Login</a>
+        </div> -->
+        
+        
+        <div id="noLogin">
+            <h2>Please Login To View Information</h2>
+        </div>
+        
+        
+        <div id="login" style="display: none;">
+            Welcome <div id="displayname" style="display: inline;">{{username}}</div>
+        </div>
+        
+        
+        <div id="loginForm" onsubmit="return login()" style="display: none;">
+            <form>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="username" class="form-control" placeholder="username.." id="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" placeholder="password.." id="password">
+                </div>
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

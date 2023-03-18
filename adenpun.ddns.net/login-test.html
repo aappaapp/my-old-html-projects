@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container bg-primary p-4" id="loginaccount">
+        <div class="row mt-3">
+            <div class="col-sm-12 col-md-8 pl-4"></div>
+            <div class="col-sm-12 col-md-4 rounded shadow-sm bg-white">
+                <p class="text-primary mt-4 ml-3">SIGN ACCOUNT</p>
+                <form class="col-12 pb-3">
+                    <div class="form-group">
+                        <label>Account</label>
+                        <input type="text" name="input-name" id="input-name" class="form-control" placeholder="Account">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                    </div>
+                </form>
+                <button onclick="Login()" class="btn btn-primary btn-block mt-1 mb-5" style="width: 80%; margin: 0 auto;">Login</button>
+            </div>
+        </div>
+    </div>
+    <div id="infomation" style="display: none;">
+        Hello <div id="info-name" style="display: inline"></div>
+    </div>
+</body>
+    <script src="/js.js"></script>
+</html>

@@ -1,0 +1,23 @@
+{
+    "id": "main",
+    "name": "統神",
+    "img": "",
+    "skills": [
+        {
+            "id": "pot",
+            "name": "火鍋攻擊",
+            "type": "gaster_blaster",
+            "img": {
+                "skull": "./pot.png"
+            }
+        },
+        {
+            "id": "pot",
+            "name": "火鍋攻擊"
+        },
+        {
+            "id": "pot",
+            "name": "火鍋攻擊"
+        }
+    ]
+}

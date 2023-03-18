@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-box id="redBox" class="clickable" color="red"></a-box>
+        <a-sphere class="clickable" color="blue"></a-sphere>
+        <a-box color="green"></a-box>
+        <a-entity light="type: ambient"></a-entity>
+        <a-entity light="type: directional"></a-entity>
+      </a-scene>
+  </body>
+</html>
